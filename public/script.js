@@ -7,8 +7,23 @@
   banktransferbtn.onclick=function(){
   bankpayform.style.display='none'
   }
-  function notification (){
-  let bank=document.getElementById('bank').value;
-  let amount=document.getElementById('amount').value;
-  alert(`transfer shs ${amount}from ${bank}`)
+
+    // banking notification
+  function bnotification (){
+    // let bank=document.getElementById('bank').value;
+  let amount=document.getElementById('bamount').value;
+//   alert(`transfer shs ${amount} from ${bank}`)
+    if (amount.length !== "") {
+        alert(`You are about to make a deposit of ${amount}, Are you sure?`)
+    }
+  }
+
+    // mobile money notification
+  function mnotification (){
+    // let bank=document.getElementById('bank').value;
+  let amount=document.getElementById('mamount').value;
+//   alert(`transfer shs ${amount} from ${bank}`)
+    if (amount.length !== "") {
+        alert(`You are about to make a deposit of ${amount}, Are you sure?`)
+    }
   }
